@@ -42,7 +42,7 @@ img {
 	border: 1px solid hsl(209, 23%, 22%);
 	padding: 15px;
 	margin: 30px 10px;
-	width: 100%;
+	width: 40%;
 }
 input[type="text"] {
 	border: none;
@@ -55,9 +55,9 @@ input[type="text"]:active {
 	outline: none;
 }
 select {
-	-webkit-appearance: none;
+	/* -webkit-appearance: none;
 	-moz-appearance: none;
-	appearance: none;
+	appearance: none; */
 	outline: none;
 	box-shadow: none;
 	border: none;
@@ -135,9 +135,30 @@ select {
 		width: 500px;
 		height: 350px;
 	}
+	.form {
+		display: flex;
+		justify-content: space-between;
+		padding: 20px;
+	}
+	.input {
+		margin-top: -3px;
+	}
+}
+option[value=""][disabled] {
+	display: none;
+}
+@media screen and (max-width: 720px) {
+	input[type="text"] {
+		width: 90%;
+	}
+	select {
+		width: 40%;
+	}
+	.input {
+		width: 70%;
+	}
 }
 select {
-	
 	margin-left: 20px;
 }
 .detail {

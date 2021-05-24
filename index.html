@@ -22,26 +22,26 @@
 			</div>
 		</div>
 		<div class="body">
-			<div class="input check">
-				<i class="fa fa-search search" aria-hidden="true"></i>
-				<input
-					type="text"
-					placeholder="Search for country...."
-					class="input-text check"
-				/>
+			<div class="form">
+				<div class="input check">
+					<i class="fa fa-search search" aria-hidden="true"></i>
+					<input
+						type="text"
+						placeholder="Search for country...."
+						class="input-text check"
+					/>
+				</div>
+				<form action="">
+					<select name="cars" id="region" class="check">
+						<option value="" disabled selected>Filter by Region</option>
+						<option value="Africa">Africa</option>
+						<option value="Asia">Asia</option>
+						<option value="Americas">Americas</option>
+						<option value="Oceania">Oceania</option>
+						<option value="Europe">Europe</option>
+					</select>
+				</form>
 			</div>
-
-			<form action="">
-				<select name="cars" id="region" class="check">
-					<option value=""></option>
-					<option value="Africa">Africa</option>
-					<option value="Asia">Asia</option>
-					<option value="Americas">Americas</option>
-					<option value="Oceania">Oceania</option>
-					<option value="Europe">Europe</option>
-				</select>
-			</form>
-
 			<div class="country-card"></div>
 		</div>
 		<div class="detail"></div>
